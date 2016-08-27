@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+		<script src="includes/jquery.fullPage.js"></script>
+		<script src="includes/scripts.js"></script>
+		<script src="includes/initFullPage.js"></script>
+		<script src="includes/studentsAutoComplete.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+		<link href="includes/jQueryUI-v1.10.4.css" rel="stylesheet" type="text/css" /> 
+		<link rel="stylesheet" type="text/css" href="includes/jquery.fullPage.css" />
+		<link rel="stylesheet" type="text/css" href="includes/style.css" />
+		<title>Head of Division</title>
+		<meta charset="UTF-8" />	
+	</head>
+	<body>
+		<div id="headerWrapper">
+		<header>
+			<div id="HeaderSection">
+        		<div id="searchStudent">
+	        		<form action="javascript:searchStudent()">
+	        			<input type="submit" value="חיפוש" id="searchButton">
+	        			<input type="text" id="studentName" placeholder="...שם סטודנט">
+	        		</form>
+        		</div>
+        		<nav id="mainNav">
+        			<ul>
+        				<li class="navBold"> <a href="#" >דברי ראש מחלקה</a> </li>
+        				<li class="borderA"> <a href="proffersorPage.html" >סגל הוראה</a> </li>
+        				<li> <a href="specialities.html" >התמחויות</a> </li>
+        				<li class="borderA">  <a href="students.php" >סטודנטים</a> </li>
+        				<li> <a href="index.php">עמוד הבית</a> </li>
+        			</ul>
+        		</nav>
+        		<nav id="mobileNav">
+					 <button id="mobileButton"></button>
+							<ul id="menuMobile">
+		        				<li> <a class="linkMobile" href="index.php">עמוד הבית</a> </li>
+		        				<li> <a class="linkMobile" href="students.php" >סטודנטים</a> </li>
+		        				<li> <a class="linkMobile" href="specialities.html" >התמחויות</a> </li>
+		        				<li class="navBold"> <a class="linkMobile" href="proffersorPage.html" >סגל הוראה</a> </li>
+		        				<li> <a class="linkMobile" href="#" >דברי ראש מחלקה</a> </li>
+        					</ul>
+        		</nav>
+        		<button id="mobileButtonSearch"></button>
+        			
+        		</div>
+        		    <p class="homeLogo"> הנדסת תוכנה</p>
+        			<a id="logo" href="index.php"></a>
+		</header>
+		</div>
+		<div id="fullpage"> <!-- wrapper -->	
+			<div class="section" id="mainHeadDivision"> 	
+				<div class="mainSection">
+					<div class="sub2section">
+						<div class="titles2">
+							<h1>דברי ראש המחלקה</h1>
+			        		<h3>"אם אתם לא נדהמים לרעה מהקוד שכתבתם לפני 3 <br>
+			        			שנים, משמע שלא למדתם מפסיק דברים בשנים הללו..."</h2>		        		
+			        	</div>	
+			        	<br>	
+			        	
+			        	<div id="slideCenter">    
+							<div class="slide">	
+								<p id="headparagraph" class="lecturerText2"> 
+								כראש מחלקה' אני שמח לראות סטודנטים שלוקחים אחריות על הסביבה<br>
+								 שלהם- במקרה זה ״הסביבה״ היא המרחב הווריטואלי של עולם המידע - דרך תכנון, עיצוב ומימוש של אתר בוגרי המחלקה להנדסת תוכנה. <br>
+								מעבר לתהליך הלמידה הכרוך בתכנון ובעיצוב ובניה של אתר כזה, יש כאן אמירה: חשוב לנו לספר לעולם איפה ומה למדנו בשנות התואר שלנו. על כן, אני שמח שסוף סוף בוגרי המחלקה בנו לעצמם אכסניה כזו. <br>
+								בוא וראו והתרשמו! <br>
+								<br>
+								<br>
+								<span>ד״ר אמנון דקל </Span><br>
+								<span>ראש המחלקה    </span>
+								
+								</p>	
+							</div>	
+							
+						</div>
+										
+					</div>
+					
+					<img src="images/teachers/headDivision.png" id="headDivisionPos" class="headDivisionPosDesktop">
+					
+			</div>
+		</div>
+		<script>
+			startFullPage();	
+			initAutoComplete();
+			$(window).ready(responsiveFnHD).resize(responsiveFnHD);
+			
+			$('#mobileButton').click(function() {
+			  $(this).toggleClass('expanded').siblings('#menuMobile').slideToggle();
+			});
+
+			$( "#mobileButtonSearch" ).click(function() {
+				 $("#studentName").css("visibility", "visible");
+				 $( "#studentName" ).slideToggle().focus();			  
+			});
+
+			
+
+		</script>
+	</body>
+</html>

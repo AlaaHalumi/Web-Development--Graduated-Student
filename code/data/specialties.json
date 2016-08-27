@@ -1,0 +1,30 @@
+{
+	"specialtiesName" :   [
+	 	{
+			 "id": "Mobile",
+			 "name": "מחשוב מובייל"
+		 },
+		 
+		 {
+			 "id": "Web",
+			 "name": "הנדסת וויב"
+			
+		 },
+		 {
+			 "id": "Cyber",
+			 "name": "מחשוב סייבר"
+			
+		 },
+		 {
+			 "id": "Analytics",
+			 "name": "מחשוב אנליטי"
+		 }
+		 ,
+		 {
+			 "id": "Addition",
+			 "name": " נוספים"
+			
+		 }
+	 ] 
+
+}

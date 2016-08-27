@@ -1,0 +1,854 @@
+@viewport {
+width:480px;
+zoom:1;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+header, footer, main, article, section, nav, aside {
+	display:block;
+}
+@font-face {
+   font-family: regularFont;
+   src: url('../includes/FbScorpion-Regular.otf');
+}
+@font-face {
+   font-family: boldFont; 
+   src: url('../includes/FbScorpion-Bold.otf');
+}
+
+form,header,p,#studentName,#searchButton,.sub3section{
+	font-family: regularFont;
+}
+.section{
+	background-size: cover;
+}
+.slide{
+	background-size: cover;
+}
+#section0{  
+	background: url("../images/BG/homepageBG.jpg") ;
+}
+#section1{  
+	background: url("../images/BG/mobileBG.jpg") ;
+}
+#section2{  
+	background: url("../images/BG/webBG.jpg") repeat;
+}
+#section3{  
+	background: url("../images/BG/cyberBG.jpg") repeat; 
+}
+#section4{  
+	background: url("../images/BG/analiticsBG.jpg") ; z-index: 1;
+}
+#section5{  
+	background: url("../images/BG/othersBG.jpg") repeat;
+}
+#mainHeadDivision{  
+	background: url("../images/BG/amnonPageBG.jpg") repeat ;
+}
+#studentsAZ{
+	background: url("../images/BG/studentsBG.jpg") repeat;			
+}
+.studentBG{
+	background: url("../images/BG/studentBG.jpg") repeat;		
+}
+
+
+
+/*to define the dots nav*/
+.fp-slidesNav.bottom{   
+	bottom: 25px;
+}
+#infoMenu li a {
+	color: #fff;
+}
+header{
+	position:fixed;
+	width: 1024px;
+	height: 155px;
+	z-index:9;
+	text-align:center;
+	color: #f2f2f2;
+	padding: 20px 0 0 0;
+	top:0px;
+}
+#HeaderSection{
+	padding-top: 88px;
+	margin-left: 69px;
+	margin: 0px auto;
+}
+#searchStudent {     
+    height: 30px;
+    float: left;
+    font-size: 18px;
+    border: 1px solid #000;
+    position: relative;
+    bottom: 15px;
+}
+
+#studentName {     
+    width: 125px;
+    height: 30px;
+    border: none;
+    float: left;
+    text-align: right;
+    padding-right: 5px;
+}
+
+#searchButton {    
+    width: 59px;
+    height: 30px;
+    border: none;
+    float: left;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.07);
+}
+
+#mainNav{  /* main tafrit */
+	float:right;
+	height: 24px;
+	position: relative;
+    bottom: 10px;
+    right:19%;
+}
+#mainNav li{
+	float:left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#mainNav li >a{
+	text-decoration:none;
+	font-size: 18px;
+    color: #0D0D0D;
+}
+#mainNav ul{
+	list-style-type:none;
+}
+.borderA{
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+}
+#logoPostion{
+	position:relative;
+}
+.homeLogo{
+	font-family: regularFont;
+	font-size:17px;
+	color:#0D0D0D;
+	position: absolute;
+	left: 884px;
+	top: 32px;
+}
+
+.navBold{
+	font-weight:bold;
+}
+.clear{
+	clear:both;
+}	
+
+/* homepage.html */
+/* Homepage */
+
+.sub3section h4{
+	font-family: boldFont;
+	font-size: 23px;
+}
+.sub3section ul{
+	list-style-type: none;
+}
+
+#buttonSec{
+	bottom:0px;
+	left:200px;
+	position:absolute;	
+}
+#arrow{
+	background:url("../images/arrow.png") no-repeat;
+	display:block;
+	width:39px;
+	height:39px;
+	margin:0px auto;
+	position:relative;	
+	top: 215px;
+}
+
+#slideCenter2{ /*studentsAZ */
+	width: 830px;
+	height: 611px;
+	margin:0px auto;
+	padding-right: 24px;
+}
+.webimage{
+	position: relative;
+	margin:0px auto;
+	/*width:700px;
+	height:243px;*/
+	display: block;
+}
+
+/*Mobile */
+
+/* Specialities.html */
+
+/* Web page */
+.fp-slidesNav.bottom{   
+	bottom: 25px;
+}
+#infoMenu li a {
+	color: #fff;
+}
+
+.lecturerText2 span{
+       font-family: boldFont;
+}
+
+
+/*End of Specialities.html */
+/*JS CSS SLIDER BOX*/
+.box{
+	width: 103px;
+	height: 155px;
+	margin-top:3px;
+	float: left;
+	margin-left:44px;
+	cursor: pointer;
+	font-family:regularFont;
+}
+
+
+/*End of JS CSS SLIDER BOX */
+/*headDivision body*/
+#headDivision{
+	overflow:hidden;
+}
+/*End of headDivision */
+/*student page box of slide*/
+.studentBox{
+	width: 103px;
+	height: 165px;
+	cursor: pointer;
+	float:left;
+	margin-top:3px;
+	margin-left: 55px;
+}
+
+/* Private student Page */
+.studentTitle{
+	right:4%;
+	position:relative;
+	font-family: "FbScorpion";
+  	color: rgb(255, 255, 255);
+  	direction: rtl;
+  	margin-bottom:35px;
+}
+.socialIcon{
+	float:right;
+	margin-top:15px;
+	position:relative;
+	right:2%;
+}
+.icon1{
+	display:block;
+	padding: 0px 3.5px 0px 3.5px;
+	width:40px;
+	height:40px;
+	background: url("../images/icon1.png") no-repeat;
+	float:left;
+}
+.icon2{
+	display:block;
+	padding: 0px 3.5px 0px 3.5px;
+	width:40px;
+	height:40px;
+	background: url("../images/icon2.png") no-repeat;
+	float:left;
+}
+.icon3{
+	display:block;
+	padding: 0px 3.5px 0px 3.5px;
+	width:40px;
+	height:40px;
+	background: url("../images/icon3.png") no-repeat;
+	float:left;
+}
+.icon4{
+	display:block;
+	padding: 0px 3.5px 0px 3.5px;
+	width:40px;
+	height:40px;
+	background: url("../images/icon4.png") no-repeat;
+	float:left;
+}
+.icon5{
+	display:block;
+	padding: 0px 3.5px 0px 3.5px;
+	width:40px;
+	height:40px;
+	background: url("../images/icon5.png") no-repeat;
+	float:left;
+}
+
+
+.sub4Section{
+	width:836px;
+	height: 472px;
+	position:relative;
+	top:156px;
+	direction: rtl;
+}
+.titles4{
+	position:relative;
+  	color: rgb(255, 255, 255);
+  	direction: rtl;
+  	margin-bottom:15px;
+  	font-size: 28px;
+  	font-family: boldFont;
+  	right:3%;
+}
+
+
+.lecturerText2{
+    width: 530px;
+    height: 400px;
+    margin: 0px auto;
+    float: right;
+    padding-right: 105px;   
+}
+
+.textCenter{
+	text-align:center;
+}
+
+
+
+#mainNav li a:hover{  
+ text-shadow:0.2px 0.3px 0.2px #0D0D0D, 0.2px 0.3px 0.2px #0D0D0D, 0.2px 0.3px 0.2px #0D0D0D;
+}
+
+.studentBackArrow{
+	top:173px;
+	left:80px;
+	position:absolute;
+	width:41px;
+	height:41px;
+	background: url("../images/backarrow.png");
+
+}
+
+#mobileNav{
+	display:none;
+}
+
+
+.headDivisionPosMobile{
+		z-index: 2;
+		background-color:hsl(20,50%,72%);
+		border-radius:50%;
+		}
+		
+#leftarrow{
+	width:41px;
+	height:41px;
+	top:20px;
+	left:35px;
+	background: url("../images/leftarrow.png") no-repeat;
+	display:block;
+	position: absolute;
+	z-index:99;
+}
+#rightarrow{
+	width:41px;
+	height:41px;
+	top:20px;
+	left:192px;
+	background: url("../images/rightarrow.png") no-repeat;
+	display:block;
+	position: absolute;
+	z-index:99;
+}
+		#art1 {
+		position: absolute;
+		top: 275px;
+		font-size: 550px;
+		font-family: Haettenschweiler;
+		color: #A3BC9F;
+		left: -40px;
+	}
+	#art2{
+		color: rgb(148, 190, 233);
+		position: absolute;
+		left: -40px;
+		top: -495px;
+		font-size: 1000px;
+		font-family: Haettenschweiler;
+	}
+	#art3 {
+		color: rgb(255, 220, 145);
+		position: absolute;
+		top: 275px;
+		font-size: 550px;
+		font-family: Haettenschweiler;
+		left: -40px;
+	}
+	#art4{
+		color: #BFBEB9;
+		position: absolute;
+		left: -78px;
+		top: -160px;
+		font-size: 750px;
+		font-family: Haettenschweiler;
+		font-weight: bold;
+	}
+	#art5{
+		color: rgb(208, 216, 189);
+		position: absolute;
+		left: -40px;
+		top: -495px;
+		font-size: 1000px;
+		font-family: Haettenschweiler;	
+	}
+	#art6{ /*studentsAZ */
+		position: absolute;
+		top: 275px;
+		font-size: 550px;
+		font-family: Haettenschweiler;
+		color: rgb(221, 122, 110);
+		left: -40px;
+	}
+	#art7{ /*proffessorPage */   
+	    color: #98B8DE;
+	    position: absolute;
+	    top: 230px;
+	    font-size: 500px;
+	    font-family: boldFont;
+	    right: 180px;
+	}
+	
+	#art8{
+		color: rgb(255, 221, 140);
+		position: absolute;
+		left: -78px;
+		top: -160px;
+		font-size: 750px;
+		font-family: Haettenschweiler;
+		font-weight: bold;
+	}
+		/*
+		 .bodyBlur :not(#studentName){
+			-webkit-filter: blur(5px);
+			  -moz-filter: blur(5px);
+			  -o-filter: blur(5px);
+			  -ms-filter: blur(5px);
+			  filter: blur(5px);
+		}
+		
+		}
+		.blur-off {
+		    -webkit-filter: blur(0px) !important;
+		    -moz-filter   : blur(0px) !important;
+		    -o-filter     : blur(0px) !important;
+		    -ms-filter    : blur(0px) !important;
+		    filter        : blur(0px) !important;
+		}*/
+		
+		
+		
+		
+@media (min-width:850px){
+	
+		
+		#mainLogo{
+			background: url("../images/logoMain.png") no-repeat;
+			display:block;
+			width: 330px;
+			height: 390px;
+			margin: 0px auto;	
+			position:relative;
+			top: 190px; 
+		}
+		
+		
+		#headerWrapper{
+			margin: 0px auto;
+			width:1024px
+		}
+		
+		.mainSection{
+			width:1024px;
+			height: 768px;
+			margin: 0px auto;
+			position:relative;
+		}
+		
+		#logo{
+			display:block;
+			width: 126px;
+			height: 100px;
+			background: url("../images/logo.png");
+			float:right;
+			top:55px;
+			right:33px;
+			position:absolute;
+		}
+		
+		#mainAbout p{
+			font-size: 20px;
+			text-align: center;
+			margin-bottom:10px;
+		}
+		
+		#mainAbout{
+			margin: auto 0px;
+			text-align: center;
+			position: relative;
+			top: 220px;
+		}
+		
+		.slideCenter{
+			width: 605px;
+			height: 611px;
+			margin: 0px auto;
+			padding-right: 34px;
+		}
+		
+		.sub3section{
+			width:755px;
+			height:600px;
+			position:relative;
+			top:156px;
+			margin: 0px auto;
+			direction: rtl;
+			font-size: 16px;
+			color:#0D0D0D;
+		}
+		.subSection{
+			width: 711px;
+			height: 611px;
+			position:relative;
+			top:156px;
+			margin: 0px auto;
+		}
+		.sub2section{
+			
+			width:800px;
+			height:480px;
+			position:relative;
+			top:156px;
+			margin: 0px auto;
+			direction: rtl;
+			padding-left: 20px;
+		}
+		
+		.titles{ 
+			position:relative;
+		  	color: rgb(255, 255, 255);
+		  	direction: rtl;
+		  	margin-bottom:15px;
+		  	font-size: 28px;
+		  	font-family: boldFont;
+			right:8%;  
+		}
+		
+		.headDivisionPosDesktop{
+		z-index: 2;
+		left: 37px;
+		top: 345px;
+		position: absolute;
+		border-radius: 50%;
+		}
+		#mobileButtonSearch{
+		display: none;
+		}
+		
+		#sliderStudent{
+		width:455px;
+		height:255px;
+		right:188px;
+		margin-top:17px;
+		background-color: #656765;
+		}
+		#sliderStudent{
+			width:455px;
+			height:256px;
+			margin-top:17px;
+			margin-right: 25px;
+		}
+		
+		.boxEmptyStandPic{
+			position:absolute;
+			left:63px;
+			top:145px;
+			height:325px;
+			width:139px;
+			z-index:2;
+		}
+		
+		.boxStandPic{
+			position:absolute;
+			left:54px;
+			top:50px;
+			height:325px;
+			width:244px;
+			z-index:2;
+		}
+				
+		.titles2{
+			position:relative;
+			right:16%;
+		  	color: rgb(255, 255, 255);
+		  	direction: rtl;
+		  	font-size: 28px;
+		  	font-family: boldFont;
+		  	margin-bottom:15px;
+		  	right:13.5%;  
+		}
+		.titles1{ 
+		position:relative;
+	  	color: rgb(255, 255, 255);
+	  	direction: rtl;
+	  	margin-bottom:15px;
+	  	font-size: 28px;
+	  	font-family: boldFont;
+		right:10%;  
+		z-index: 99:
+	}
+		.lecturerText{
+		width: 600px;
+		height: 400px;
+		margin:0px auto;
+	}
+		.image{
+		width: 103px;
+		height:103px;
+		display:block;
+		border-radius:50%;
+	}
+		.boxTeacher{
+		width: 103px;
+		height: 155px;
+		margin-top:3px;
+		float: left;
+		margin-left:44px;
+		font-family:regularFont;
+	}
+	#teacherContainer1{
+	padding-top:100px;	
+	}
+}
+
+
+/*responsive Mobile */
+
+@media(max-width:375px){
+
+		
+		.mainSection{
+			height: 100%;
+			width:100%;
+			position: relative;
+		}
+		#headerWrapper{
+			width:100%;
+			position: relative;
+		}
+		.sub2section, .sub3section,.subSection{
+			padding-top:100px;
+			height: 87.1875%;
+			width:100%;
+			position: relative;
+		}
+		.section{
+			width:100%;
+			height:100%;
+		}
+		
+		#mainNav{  
+			display:none;
+		}
+		#mobileNav{
+			display:block;
+			position:fixed;
+			width:100%;
+			top:0px;
+		}
+		#menuMobile{
+			display: none;
+		}
+		/*hamburger*/
+		#mobileButton{
+			position:absolute;
+		    top: 24px;
+		    left: 8px;
+		    border: 0;
+		    text-indent: 200%;
+		    overflow: hidden;
+		    background: rgba(255,255,255,.8) url("../images/hamburger.png") center no-repeat;
+		    border: 1px solid #ddd;
+		    border-radius: 3px;
+		    background-size: 80%;
+		    width: 58px;
+		    height: 31px;
+		    outline: none;
+		    transition: all 400ms ease;
+		    &.expanded
+		      transform: rotate(90deg);
+		      background-color: transparent;
+		      border: 0;	
+			}
+			#mobileButtonSearch{
+			position:absolute;
+		    top: 25px;
+		    left: 65px;
+		    border: 0;
+		    text-indent: 200%;
+		    overflow: hidden;
+		    background: rgba(255,255,255,.8) url("../images/search.png") center no-repeat;
+		    border: 1px solid #ddd;
+		    border-radius: 3px;
+		    background-size: 80%;
+		    width: 32px;
+		    height: 32px;
+		    outline: none;
+		    transition: all 400ms ease;
+		    &.expanded
+		      transform: rotate(90deg);
+		      background-color: transparent;
+		      border: 0;	
+		}
+		/*li in hamburger*/
+ 		.linkMobile{
+   		 display: block;
+		  background: #eee;
+		  text-align: center;
+		  padding: 20px 0;
+		  border-bottom: 1px solid #ddd;
+		  text-decoration: none;
+		  color: #222;
+		  font-weight: bold;
+		  &:hover, &:active, &:focus
+		    background: darken(#eee, 3%);
+          }
+  		 header{
+  		 	width:100%;
+  		 }
+  		
+		#studentName{
+			display:none;
+			width:250px;
+			z-index: 99;
+			position: relative;
+
+		}
+		#searchStudent{
+			border:none;
+			visibility:hidden;
+		}
+		#logo{
+   		 	width:80px;
+   		 	height:64px;
+   		 	display:block;
+			background: url("../images/logoMobile.png");
+			float:right;
+			top:25px;
+			right:5.33%;
+			position:absolute;
+   		 }
+		.titles2{
+			font-size: 77%;
+			margin-right: 6%;
+			color: rgb(255, 255, 255);
+		  	direction: rtl;
+		  	font-family: boldFont;
+		}
+		.titles1,.titles{
+			font-size: 77%;
+			margin-right: 8%;
+			margin-bottom: 4%;
+			color: rgb(255, 255, 255);
+		  	direction: rtl;
+		  	font-family: boldFont;
+		}
+		#slideCenter,.lecturerText{
+			width:86%;
+			padding:0% 6% 0% 6%;
+			font-size: 77%;
+			direction: rtl;
+		}
+		
+		 .headDivisionPosDesktop{
+			border-radius:50%;
+			margin:13%;
+   		 }
+		#headparagraph span{
+       		font-family: boldFont;
+		}
+		#webPicSlider{
+			margin-top:2%;
+		}
+		#mainLogo{
+			background: url("../images/logoMainMobile.png") no-repeat;
+			display:block;
+			width: 223px;
+			height: 263px;
+			margin: 0px auto;	
+			position:relative;
+			top: 156px; 
+		}
+		#fp-nav{
+			display:none;
+		}
+		#mainAbout{
+			font-size:100%;
+			margin: auto 0px;
+			text-align: center;
+			position: relative;
+			top: 30%;
+		}
+		#mainAbout p{
+			font-size:100%;
+			margin: auto 0px;
+			text-align: center;
+
+		}
+		.mobileImg{
+			width:60px;
+			height:60px;
+		}
+		.mobileBoxImg{
+			width:60px;
+			height:95px;
+			
+		}
+		.textCenter{
+			font-size:77%;
+		
+		}
+		.slideCenter{
+			width:86%;
+			padding:0% 7% 0% 2%;
+			font-size: 77%;
+			direction: rtl;
+		}
+		.image{
+			width:59px;
+			height:60px;
+			display:block;
+		}
+		.boxTeacher{
+		width: 63px;
+		height: 89px;
+		margin-top:14px;
+		float: left;
+		margin-left:20px;
+		font-family:regularFont;
+		}
+		#teacherContainer1{
+			left:4%;
+			position: relative;
+		}
+		
+}
